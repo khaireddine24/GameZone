@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Game Zone</title>
+    <link rel="icon" href="images/paradise.jpg">
+    <script src="./js/fonction.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="PZ"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./styles/style1.css">
+    <link rel="stylesheet" href="./styles/style2.css">
+    <link rel="stylesheet" href="./styles/style3.css">
+    <link rel="stylesheet" href="./styles/style4.css">   
+    <link rel="stylesheet" href="./styles/style5.css">   
+  </head>
+
+  <body>
+    <div id="backToTop"></div>
+<script>
+    jQuery(document).ready(function(){
+    //   insert back to top button dynamicly
+     $( "#backToTop" ).append('<a class="backToTop" href="javascript:void(null);" style="display: none;"><i class="fa fa-angle-up"></i><iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></a>');
+      var $window = $(window);
+      var distance = 30;
+        // scroll
+      $window.scroll(function() {
+        // header
+        if($window.scrollTop() >= distance) {
+          $(".backToTop").fadeIn();
+        }else{
+          $(".backToTop").fadeOut();
+        }
+      });
+      
+      $('.backToTop').click(function() {
+        $('html, body').animate({
+                scrollTop: 0
+            }, 80);
+     });
+    })
+</script>
+    <div class="preloader"><img class="preloader-icon" src="images/5ze4.gif" alt="Loading" > </div>
+    <header class="top-header">
+        <table width="100%">
+    <tr>
+      <td width="7%">
+      <div class="main-content">
+  
+      <div id="main">
+        <div class="hamburger" onclick="openNav()">
+          <div class="hamburger__container">
+          <div class="hamburger__inner"></div>
+          <div class="hamburger__hidden"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </td>
+     
+  <th style="text-align: center; position: relative;" width="100%"><div class="sign">
+      <span class="sign__word">&nbsp; &nbsp; Game Zone</span>
+  </div></th>
+  <th> 
+    <y class="pointer" onclick="openSearch()"><i style="font-size:20px;text-align:center;width: 53px;" class="fa">&#xf002;</i></y>
+  </th>
+  <th>
+    <a href="sign.html"><i style="text-align: center;" class="fas fa-user">&nbsp;&nbsp;&nbsp;</i></a>
+  </th>
+  <th>
+    <div style="text-align: center;" class="fas fa-shopping-basket">&nbsp;&nbsp;&nbsp;</div>
+  </th>
+  </tr>
+  </table>
+  
+</header>
+
+<iframe src="intro.html" width="100%" height="100%" frameBorder="0">
+</iframe>
+
+<br>
+<br>
+<br>
+<hr>
+<div data-aos="fade-up">
+  <script>
+    AOS.init();
+  </script>
+<p style="text-align: center; color: white;font-size: 38pt;"><b>WE ARE EXPERTS IN THE ART OF GAMING</b></p>
+
+<!----cards---->
+<div class="box">
+  <div class="content-wrapper">
+  
+    <div class="news-card">
+      <div data-aos="zoom-in-up">
+        <script>
+          AOS.init();
+        </script>
+
+      <a href="#" class="news-card__card-link"></a>
+      <img src="images/ez.webp" alt="gaming pc" class="news-card__image">
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title">Gaming PCs</h2>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">Choose Your Own Prebuilt Gaming Pc By Game Zone&hellip;</p>
+          <a href="#" class="news-card__read-more">Here For More</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+    <div class="news-card">
+     
+      <a href="#" class="news-card__card-link"></a>
+      <img src="images/aa.png" alt="Monitors" class="news-card__image">
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title">Monitors</h2>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">Choose Your Monitor, 1080p 60Hz To 4K 360Hz !&hellip;</p>
+          <a href="#" class="news-card__read-more">Here For More</a>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="news-card">
+      <div data-aos="zoom-in-up">
+        <script>
+          AOS.init();
+        </script>
+      <a href="#" class="news-card__card-link"></a>
+      <img src="images/ps4.png" alt="Consoles" class="news-card__image">
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title">Consoles</h2>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">Découvrir Note Collection De Consoles&hellip;</p>
+          <a href="#" class="news-card__read-more">Here For More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<!---cards--->
+<hr>
+
+<br><br><br>
+
+<iframe src="slide.html" width="100%" height="70%" frameBorder="0">
+</iframe>
+
+<br><br>
+
+<!---------pop prod--------->
+<div data-aos="fade-up">
+  <script>
+    AOS.init();
+  </script>
+<p style="font-size: 45pt; color: aliceblue;text-align: center;line-height: 50px;"><m>POPULAR PRODUCTS</m>
+  <div class="underline">
+  </div></p>
+
+<p><h5 style="text-align: center; color: beige;">If you want to buy a Gaming PC, trust the Tunisian Gaming specialist Game Zone.</h5><h5 style="text-align: center;color: beige;">High-Tech partner offers you the best GAMER PCs at the best prices.
+</h5></p>
+</div>
+<div data-aos="fade-up">
+  <script>
+    AOS.init();
+  </script>
+<br> <br>
+<div class="mai">
+  <ul class="car">
+    <li class="car_item">
+      <div class="ca">
+        <div data-aos="flip-down">
+          <script>
+            AOS.init();
+          </script>
+        <div class="ca_image"><img id="img" src="images/987.jpg" alt="gaming desktop"></div>
+        <div class="ca_content">
+          <h2 class="ca_title">GENESIS</h2>
+          <p class="ca_text">Genesis, Gaming PC gives you the power you expect for 1080p high refresh rate gaming</p>
+          <button class="btn ca_btn">2059 DT</button>
+        </div>
+        </div>
+      </div>
+    </li>
+    <li class="car_item">
+      <div class="ca">
+        <div data-aos="flip-down">
+          <script>
+            AOS.init();
+          </script>
+        <div class="ca_image"><img  id="img"  src="images/msi3070.jpg" alt="rtx 3070"></div>
+        <div class="ca_content">
+          <h2 class="ca_title">NVIDIA RTX 3070</h2>
+          <p class="ca_text">Designed to handle the graphics demands of 4K and 1440p gaming at high frame rates.</p>
+          <button class="btn ca_btn">1890 DT</button>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="car_item">
+      <div class="ca">
+        <div data-aos="flip-down">
+          <script>
+            AOS.init();
+          </script>
+        <div class="ca_image"><img id="img" src="images/blade.jpg" alt="laptop"></div>
+        <div class="ca_content">
+          <h2 class="ca_title">RAZER BLADE 15</h2>
+          <p class="ca_text">Sleek high performance gaming laptop with up to 8-Core CPUs and GeForce® graphics.</p>
+          <button class="btn ca_btn">3869 DT</button>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="car_item">
+      <div class="ca">
+        <div data-aos="flip-down">
+          <script>
+            AOS.init();
+          </script>
+        <div class="ca_image"><img id="img" src="images/F_20190925190951adT544.jpg" alt="Monitor"></div>
+        <div class="ca_content">
+          <h2 class="ca_title">GAMING MONITOR</h2>
+          <p class="ca_text">Aorus Gaming curved monitor, equipped with a 1920x1080, 165hz, 1ms response time panel.</p>
+          <button class="btn ca_btn">869 DT</button>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="car_item">
+      <div class="ca">
+        <div data-aos="flip-down">
+          <script>
+            AOS.init();
+          </script>
+        <div class="ca_image"><img id="img" src="images/Mechanical-Keyboards-Are-Great-for-Gaming.jpg" alt="keyboard"></div>
+        <div class="ca_content">
+          <h2 class="ca_title">RAZER CYNOSA V2</h2>
+          <p class="ca_text">Membrane Gaming Keyboard with Razer Chroma. Providing unassuming dependability and reliability.</p>
+          <button class="btn ca_btn">189 DT</button>
+        </div>
+      </div>
+      </div>
+    </li>
+    <li class="car_item">
+      <div class="ca">
+        <div data-aos="flip-down">
+          <script>
+            AOS.init();
+          </script>
+        <div class="ca_image"><img id="img" src="images/Capture.PNG" alt="PlayStation 5"></div>
+        <div class="ca_content">
+          <h2 class="ca_title">PLAYSTATION 5</h2>
+          <p class="ca_text">Unleash new gaming possibilities that you never anticipated with PlayStation 5.</p>
+          <button class="btn ca_btn">1759 DT</button>
+        </div>
+      </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+<!---------pop prod--------->
+
+<br><br><br><br><br><br><br>
+
+<!---Slider2.0-->
+<div data-aos="fade-up">
+  <script>
+    AOS.init();
+  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link style="z-index: -1;" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<hr style="width: 85%; border-color: rgb(99, 99, 99);">
+<br>
+<br><br>
+<div class="wra">
+  <div class="carousel owl-carousel">
+<div class="card card-1">
+  <a href="https://www.asus.com/nafr-fr/" target="_blank"><img class="img"src="images/logo/asus.png" alt="asus"></a>
+</div>
+<div class="card card-2">
+  <a href="https://www.razer.com/" target="_blank"> <img class="img" src="images/logo/razer.png" alt="razer"></a>
+</div>
+<div class="card card-3">
+  <a href="https://www.nvidia.com/en-us/" target="_blank"> <img class="img" src="images/logo/nvidia.png" alt="nvidia"></a>
+</div>
+<div class="card card-4">
+  <a href="https://www.msi.com/index.php/" target="_blank"><img class="img" src="images/logo/msi.png" alt="msi"></a>
+  </div>
+<div class="card card-5">
+  <a href="https://www.playstation.com/en-us/" target="_blank"><img class="img" src="images/logo/ps.png" alt="ps"></a>
+</div>
+<div class="card card-6">
+  <a href="https://www8.hp.com/us/en/home.html" target="_blank"> <img class="img" src="images/logo/hp.png" alt="hp"></a>
+</div>
+<div class="card card-7">
+  <a href="https://www.gigabyte.com/" target="_blank"> <img class="img" src="images/logo/gigabyte.png" alt="gigabyte"></a>
+</div>
+<div class="card card-8">
+  <a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank">  <img class="img" src="images/logo/intel.png" alt="intel"></a>
+</div>
+<div class="card card-9">
+  <a href="https://www.amd.com/en" target="_blank"> <img class="img" src="images/logo/amd.jpg" alt="amd"></a>
+</div>
+<div class="card card-10">
+  <a href="https://www.nzxt.com/" target="_blank"> <img class="img" src="images/logo/nzxt.png" alt="nzxt"></a>
+</div>
+<div class="card card-11">
+  <a href="https://www.pny.com/" target="_blank">  <img class="img" src="images/logo/pny.png" alt="pny"></a>
+</div>
+<div class="card card-12">
+  <a href="https://www.redragonzone.com/" target="_blank">  <img class="img" src="images/logo/redragon.png" alt="RedDragon"></a>
+</div>
+<div class="card card-13">
+  <a href="https://www.redragonzone.com/" target="_blank">  <img class="img" src="images/logo/evga.png" alt="evga"></a>
+</div>
+<div class="card card-14">
+  <a href="https://www.aorus.com/" target="_blank">  <img class="img" src="images/logo/aorus.PNG" alt="aorus"></a>
+</div>
+<div class="card card-15">
+  <a href="https://www.microsoft.com/en-us" target="_blank">  <img class="img" src="images/logo/micro.png" alt="Microsoft"></a>
+</div>
+<div class="card card-16">
+  <a href="https://www.coolermaster.com/" target="_blank">  <img class="img" src="images/logo/cooler.png" alt="Cooler Master"></a>
+</div>
+<div class="card card-17">
+  <a href="https://www.teamgroupinc.com/en/products/t-force" target="_blank">  <img class="img" src="images/logo/TF.jpg" alt="Team Group"></a>
+</div>
+<div class="card card-18">
+  <a href="https://www.asrock.com/index.us.asp" target="_blank">  <img class="img" src="images/logo/as.png" alt="Asrock"></a>
+</div>
+<div class="card card-19">
+  <a href="https://www.benq.com/en-us/index.html" target="_blank">  <img class="img" src="images/logo/benq.png" alt="benq"></a>
+</div>
+<div class="card card-20">
+  <a href="https://www.corsair.com/ww/en/" target="_blank">  <img class="img" src="images/logo/cor.png" alt="corsair"></a>
+</div>
+<div class="card card-21">
+  <a href="https://www.amd.com/en/processors/ryzen" target="_blank">  <img class="img" src="images/logo/ryz.png" alt="Ryzen"></a>
+</div>
+<div class="card card-22">
+  <a href="https://www.seagate.com/fr/fr/" target="_blank">  <img class="img" src="images/logo/seg.svg" alt="seagate"></a>
+</div>
+<div class="card card-23">
+  <a href="https://www.samsung.com/us/" target="_blank">  <img class="img" src="images/logo/sam.png" alt="samsung"></a>
+</div>
+<div class="card card-24">
+  <a href="https://www.westerndigital.com/" target="_blank">  <img class="img" src="images/logo/wd.png" alt="Western Digital"></a>
+</div>
+<div class="card card-25">
+  <a href="https://www.hyperxgaming.com/ar" target="_blank">  <img class="img" src="images/logo/hx.svg" alt="HyperX"></a>
+</div>
+<div class="card card-26">
+  <a href="https://www.gskill.com/" target="_blank">  <img class="img" src="images/logo/gs.png" alt="G.skill"></a>
+</div>
+<div class="card card-27">
+  <a href="https://www.apple.com/" target="_blank">  <img class="img" src="images/logo/app.png" alt="apple"></a>
+</div>
+<div class="card card-28">
+  <a href="https://www.xbox.com/en-US/" target="_blank">  <img class="img" src="images/logo/xbox.png" alt="Xbox"></a>
+</div>
+<div class="card card-29">
+  <a href="https://steelseries.com/" target="_blank">  <img class="img" src="images/logo/steel.png" alt="SteelSeries"></a>
+</div>
+<div class="card card-30">
+  <a href="https://www.logitech.com/en-gb" target="_blank">  <img class="img" src="images/logo/logi.png" alt="Logitech"></a>
+</div>
+</div>
+</div>
+<script>
+  $(".carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0:{
+        items:1,
+        nav: false
+      },
+      600:{
+        items:2,
+        nav: false
+      },
+      1000:{
+        items:3,
+        nav: false
+      }
+    }
+  });
+</script>
+
+<!---Slider2.0-->
+<br><br><br><br><br><br><br>
+<hr style="width: 100%;">
+</div>
+<!-------footer-------->
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <span class="sign__word">Game Zone</span>
+    <br>
+    <br>
+  
+    <p class="footer-links">
+      <a href="index.html" class="link-1">Home</a>
+      
+      <a href="#">Gaming PCs</a>
+    
+      <a href="#">Consoles</a>
+    
+      <a href="">Laptops</a>
+      
+      <a href="#">Our Team</a>
+      
+      <a href="#">Faq</a>
+    </p>
+<br>
+    <p class="footer-company-name">©2023 Game Zone. All Rights Reserved By (Maalaoui Ahmed,Ihrissane Khaireddine).</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i id="map" class="fas fa-map-marker-alt"></i>
+      <p><span>8040. Tunis </span>Nabeul, Grombalia</p>
+    </div>
+
+    <div>
+      <i id="tel" class="fa fa-phone"></i>
+      <p>(+216) 21 398 060</p>
+    </div>
+<!--
+    <div>
+      <i id="g" class="fa fa-envelope"></i>
+      <p><a href="mailto:?">Supp</a></p>
+    </div>
+-->
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About the company</span>
+      Game Zone, Gaming specialists in Tunisia! Our range of Gaming PCs assembled and tested in Tunisia for optimal performance in your favorite video games with prices adapted to all budgets.
+    </p>
+    
+    <div class="footer-icons">
+      <a id="f" href="#"><i class="fab fa-facebook"></i></a>
+      <a id="t" href="#"><i class="fab fa-twitter"></i></a>
+      <a id="ins" href="#"><i class="fab fa-instagram"></i></a>
+      <a id="dis" href="#"><i class="fab fa-discord"></i></a>
+      <a id="y" href="#"><i class="fab fa-youtube"></i></a>
+      <a id="p" href="#"><i class="fab fa-pinterest"></i></a>
+      <a id="r" href="#"><i class="fab fa-reddit-alien"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
+<!--------footer------------------>
+
+<!-- Search-bar -->
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><y class="glow">×</y></span>
+  <div class="overlay-content">
+    <form name="fa2" action="func2.js">
+      <input type="text" placeholder="Search.." name="search" style="color:white;">
+      <button type="submit"><i style="text-align: center;" class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<!-- Search-bar -->
+
+<!-- navbar -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <br>
+  <a href="index.html"><x>Home</x></a>
+  <br>
+  <a href="#"><x>Streaming</x></a>
+  <br>
+  <a href="#"><x>Components</x></a>
+  <br>
+  <a href="#"><x>Accessories</x></a>
+  <br>
+  <a href="#"><x>Monitors</x></a>
+  <br>
+  <a href="#"><x>PCs</x></a>
+  <br>
+  <a href="#"><x>Consoles</x></a>
+  <br>
+  <a href="#"><x>Station PRO</x></a>
+  <br>
+  <a href="#"><x>Digital</x></a>
+</div>
+<!-- navbar -->
+
+</body>
+</html>

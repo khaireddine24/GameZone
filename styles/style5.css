@@ -1,0 +1,532 @@
+
+  .box{
+      align-self: auto;
+      align-items: center;
+      width: auto;
+      height:auto;
+      z-index: -1;
+  }
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    z-index: -1;
+  }
+  
+  .news-card {
+    border: 0px solid aqua;
+    margin: 2rem;
+    position: relative;
+    height: 12rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    flex: 1;
+    min-width: 290px;
+    box-shadow: 0 0 1rem rgba(29, 29, 29, 0.63);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+       
+  }
+  
+  @media (min-width: 900px) {
+  
+  .news-card {
+      height: 20rem
+  }
+    }
+  
+  .news-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(107, 104, 104, 0) linear-gradient(to bottom, rgba(133, 131, 131, 0) 50%, rgba(12, 12, 12, 0.493) 80%);;
+        z-index: 0;
+      }
+      .news-card:hover{
+          box-shadow: 0 0 15px red;
+      }
+  
+  .news-card__card-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+  
+    }
+  
+  .news-card__image {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 2s ease;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: relative;
+      z-index: -1;
+      text-align: center;
+  
+    }
+  
+  .news-card__text-wrapper {
+      position: absolute;
+      bottom: 0rem;
+      padding: 1rem;
+      color: white;
+      transition: background-color 1.5s ease;
+    }
+  
+  .news-card__title {
+      transition: color 1s ease;
+      margin-bottom: .5rem;
+    }
+  
+  .news-card__post-date {
+      font-size: .7rem;
+      margin-bottom: .5rem;
+      color: #CCC;
+    }
+  
+  .news-card__details-wrapper {
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 1.5s ease, opacity 1s ease;
+    }
+  
+  @media (min-width:1000px) {
+      .news-card:hover .news-card__details-wrapper {
+        max-height: 20rem;
+        opacity: 1;
+        
+      }
+      .news-card:hover .news-card__text-wrapper {
+        background-color: rgba(63, 63, 63, 0.377);
+      }
+      .news-card:hover .news-card__title {
+        color: rgb(67, 207, 250);
+      }
+      .news-card:hover .news-card__image {
+        transform: scale(1.2);
+        z-index: -1;
+      }
+    }
+  
+  .news-card__excerpt {
+      font-weight: 300;
+    }
+  
+  .news-card__read-more {
+      background: black;
+      color: #bbb;
+      display: block;
+      padding: 0.4rem 0.6rem;
+      border-radius: 0.3rem;
+      margin-top: 1rem;
+      border: 1px solid #444;
+      font-size: 0.8rem;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      text-decoration: none;
+      width: 7rem;
+      margin-left: auto;
+      position: relative;
+      z-index: 5;
+    }
+  
+  .news-card__read-more:hover{
+    position: relative;
+    left: 0.1rem;
+    transition: left 0.4s ease, color 0.4s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+        color: rgb(250, 4, 4);
+        background-color: rgba(233, 230, 230, 0.288);
+      }
+      .img {
+    
+          filter: gray;
+          -webkit-filter: grayscale(1); 
+          -webkit-transition: all .6s ease-in-out;  
+        }
+    
+        .img:hover {
+        filter: none;
+          -webkit-filter: grayscale(0);
+          -webkit-transform: scale(1.01);
+        }
+    
+  
+  .wra{
+    width: 99%;
+overflow: hidden;
+
+
+  }
+  .carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+ 
+  }
+  .carousel .card{
+    text-align: center;
+    margin:auto;
+    line-height: 100px;
+    font-size: 10px;
+    font-weight: 400;
+    width: 71.5px;
+    z-index: 0;
+  }
+
+  .underline {
+      background-image: linear-gradient(#f51515, #ec1616);
+      background-position: center;
+      background-size: 6% 2px; 
+      background-repeat: no-repeat;
+      padding-bottom: 8px;
+    margin-top: -2.35%;
+  }
+  .mai{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .h1 {
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+  }
+  
+  #img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+  .btn {
+    font-family: 'Nova Square', cursive;
+    color: #ffffff;
+    padding: 0.5rem;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  
+  .car {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .car_item {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .car_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .car_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .ca{
+    background-color: rgb(10, 10, 10);
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+  }
+  .ca:hover{
+    box-shadow:0 0 14px rgba(46, 46, 46, 0.795);
+  }
+  .ca_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #0a0a0a 40%, #3f3e3e 100%);
+  }
+  
+  .ca_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+  
+  .ca_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
+  .underline2 {
+    background-image: linear-gradient(#2c2b2bbb, #464444b6);
+    background-position: center;
+    background-size: 100% 5px; 
+    background-repeat: no-repeat;
+    padding-bottom: 8px;
+  margin-top: -2.35%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+.footer-distributed{
+  font-family: 'Nova Square', cursive;
+	background: rgb(5, 5, 5);
+	box-shadow: 0 0 14px rgba(105, 105, 105, 0.562);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font-size:  36px;
+	margin: 0;
+}
+
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(112, 108, 108);
+	font-size: 14.5px;
+	font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:rgb(51, 157, 228);
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 21px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+.footer-distributed .footer-links a:hover{
+  color: red;
+}
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #35a9f7;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #1a1b1b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px 'Nova Square', cursive;;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+#g:hover{
+  background-color: #f14f4f;
+}
+#y:hover{
+  background-color: red;
+}
+#f:hover{
+  background-color: #3c4ffd;
+}
+#t:hover{
+  background-color: rgb(36, 167, 243);
+}
+#ins:hover{
+  background-color: #ff43d6;
+}
+#dis:hover{
+  background-color: #616161;
+}
+#p:hover{
+  background-color: rgb(233, 22, 22);
+}
+#r:hover{
+  background-color: rgb(236, 77, 28);
+}
+
+#tel:hover{
+  background-color: rgb(15, 170, 15);
+}
+#map:hover{
+  background-color: rgb(131, 207, 16);
+}
+.fa-user{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+.fa-shopping-basket{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+.fa-user:hover{
+  color: aqua;
+}
